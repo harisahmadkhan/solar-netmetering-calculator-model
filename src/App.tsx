@@ -39,8 +39,10 @@ export default function App() {
               <p className="text-emerald-200 text-sm mt-0.5">
                 NEPRA Prosumer Regulations 2026 — 18-month feasibility forecast
               </p>
-              <p className="text-emerald-300/70 text-xs mt-1 tracking-widest uppercase">
-                ◈ Built by Haris Ahmad Khan
+              <p className="text-xs mt-2 tracking-widest uppercase">
+                <span className="text-emerald-300/60 font-light">◈ &nbsp; Designed &amp; built with curiosity by &nbsp;</span>
+                <span className="text-white font-semibold tracking-wide">Haris Ahmad Khan</span>
+                <span className="text-emerald-300/60 font-light"> &nbsp; ◈</span>
               </p>
             </div>
             <div className="flex flex-col sm:items-end gap-2">
@@ -176,7 +178,7 @@ export default function App() {
           <div>This tool is for indicative purposes only. Verify all figures with your DISCO before making financial decisions.</div>
           <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
             <span className="text-gray-300 dark:text-gray-600 font-light tracking-widest text-xs uppercase">
-              ◈ &nbsp; Designed & built by &nbsp;
+              ◈ &nbsp; Designed &amp; built with curiosity by &nbsp;
             </span>
             <span className="text-emerald-600 dark:text-emerald-500 font-semibold tracking-wide">
               Haris Ahmad Khan
