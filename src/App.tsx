@@ -39,6 +39,9 @@ export default function App() {
               <p className="text-emerald-200 text-sm mt-0.5">
                 NEPRA Prosumer Regulations 2026 — 18-month feasibility forecast
               </p>
+              <p className="text-emerald-300/70 text-xs mt-1 tracking-widest uppercase">
+                ◈ Built by Haris Ahmad Khan
+              </p>
             </div>
             <div className="flex flex-col sm:items-end gap-2">
               <ThemeToggle isDark={isDark} toggle={toggle} />
@@ -116,19 +119,6 @@ export default function App() {
           </div>
         </Section>
 
-        {/* Axpert Ultra warning (PESCO only) */}
-        {state.disco === 'PESCO' && (
-          <div className="bg-red-50 dark:bg-red-950/50 border border-red-200 dark:border-red-900 rounded-xl p-4 text-sm text-red-800 dark:text-red-300">
-            <div className="font-semibold mb-1">⚠ Axpert Ultra inverter warning (PESCO)</div>
-            <p>
-              The Axpert Ultra 11 kW is classified as "Off-Grid" by Voltronic. It lacks IEEE-1547 anti-islanding
-              certification and outputs single-phase 230V only — it will <strong>fail PESCO's technical inspection</strong>{' '}
-              for net metering on a 3-phase connection. Replace with a 3-phase grid-tied inverter certified for net
-              metering: Huawei SUN2000, Sungrow SG10-12RT, Goodwe, or Solis.
-            </p>
-          </div>
-        )}
-
         {/* Caveats */}
         <Section title="8. Model Limitations">
           <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl border border-gray-200 dark:border-gray-700 p-5 text-sm text-gray-600 dark:text-gray-300 space-y-1.5">
@@ -181,9 +171,20 @@ export default function App() {
           <Glossary />
         </Section>
 
-        <footer className="text-xs text-gray-400 dark:text-gray-500 text-center pb-8 space-y-1">
+        <footer className="text-xs text-gray-400 dark:text-gray-500 text-center pb-8 space-y-2">
           <div>Data sources: NEPRA SRO 251(I)/2026, NEPRA.org.pk tariff determinations.</div>
           <div>This tool is for indicative purposes only. Verify all figures with your DISCO before making financial decisions.</div>
+          <div className="pt-3 border-t border-gray-200 dark:border-gray-700">
+            <span className="text-gray-300 dark:text-gray-600 font-light tracking-widest text-xs uppercase">
+              ◈ &nbsp; Designed & built by &nbsp;
+            </span>
+            <span className="text-emerald-600 dark:text-emerald-500 font-semibold tracking-wide">
+              Haris Ahmad Khan
+            </span>
+            <span className="text-gray-300 dark:text-gray-600 font-light tracking-widest text-xs uppercase">
+              &nbsp; · &nbsp; Open source · MIT Licence &nbsp; ◈
+            </span>
+          </div>
         </footer>
       </div>
     </div>
